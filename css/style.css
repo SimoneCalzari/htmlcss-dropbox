@@ -58,17 +58,16 @@ body {
 
 /* #region  HEADER */
 header {
-  background-color: white;
 }
 
 nav {
+  background-color: white;
   justify-content: space-between;
   height: 80px;
-  /* position: fixed;
+  position: fixed;
   top: 0;
   right: 0;
-  left: 0; */
-  /* border: 1px solid black; */
+  left: 0;
 }
 
 nav .nav-left ul li img {
@@ -90,6 +89,7 @@ nav .nav-right ul li button {
 
 /* #region  MAIN */
 main {
+  margin-top: 80px;
   /* height: calc(100vh - 80px);
   overflow: auto; */
 }
