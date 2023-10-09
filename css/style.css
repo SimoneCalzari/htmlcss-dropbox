@@ -44,7 +44,7 @@ body {
 }
 
 .small {
-  width: 50%;
+  width: 60%;
 }
 
 .btn {
@@ -70,6 +70,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 100;
 }
 
 nav .nav-left ul li img {
@@ -103,6 +104,7 @@ header .container.big .flex .header-bottom-left {
 
 header .container.big .flex .header-bottom-left p {
   font-size: 14px;
+  line-height: 20px;
 }
 
 header .container.big .flex .header-bottom-left button {
@@ -136,6 +138,98 @@ main {
   /* height: calc(100vh - 80px);
   overflow: auto; */
 }
+
+main div.container.small {
+  padding-top: 140px;
+}
+
+main div.container.small section h2 {
+  font-size: 30px;
+}
+
+main div.container.small section .button-radio {
+  display: inline-block;
+  margin: 50px 40px 50px 0;
+}
+
+main div.container.small section .button-radio input {
+  padding-left: 20px;
+}
+
+main section .plans {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main section .plans .plan {
+  width: calc((100% - 40px) / 3);
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+main section .plans .plan .plan-category {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #d0d0d3;
+  border-right: 1px solid #d0d0d3;
+  border-left: 1px solid #d0d0d3;
+}
+
+main section .plans .plan .plan-description {
+  flex-grow: 1;
+  border: 1px solid #d0d0d3;
+  padding: 20px;
+}
+
+main section .plans .plan:last-child .plan-description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+main section .plans .plan:not(:last-child) .plan-description > * {
+  margin-bottom: 50px;
+}
+
+main section .plans .plan .plan-description ul {
+  font-size: 14px;
+}
+
+main section .plans .plan .plan-description ul li {
+  line-height: 30px;
+}
+
+main section .plans .plan .plan-description div button:first-child {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+main section .plans .plan:last-child button {
+  font-size: 14px;
+  padding: 10px 15px;
+  align-self: flex-start;
+}
+
+main section .plans .plan .plan-description a {
+  color: blue;
+  text-decoration: underline;
+}
+main section .plans .plan .plan-description div:first-child > * {
+  margin-bottom: 10px;
+}
+
+main section .plans .plan:not(:last-child) .plan-description > div:nth-of-type(2)::after {
+  content: '';
+  display: block;
+  border: 1px solid #d0d0d3;
+  width: 15%;
+  margin-top: 40px;
+}
+
 
 /* #endregion MAIN */
 
