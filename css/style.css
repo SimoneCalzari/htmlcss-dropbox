@@ -58,6 +58,8 @@ body {
 
 /* #region  HEADER */
 header {
+  background-color: #b4d0e7;
+  padding-top: 80px;
 }
 
 nav {
@@ -84,12 +86,53 @@ nav .nav-right ul li button {
   margin: 22px 10px;
 }
 
+header .container.big {
+  padding-top: 50px;
+}
+
+header .container.big h1 {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+header .container.big .flex .header-bottom-left {
+  width: 30%;
+}
+
+header .container.big .flex .header-bottom-left p {
+  font-size: 14px;
+}
+
+header .container.big .flex .header-bottom-left button {
+  margin: 25px 0;
+}
+
+header .container.big .flex .header-bottom-left i {
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 50px 0 10px;
+}
+
+header .container.big .flex .header-bottom-right {
+  width: 70%;
+  position: relative;
+}
+
+header .container.big .flex .header-bottom-right img {
+  width: 100%;
+  position: absolute;
+}
+
+
+
 /* #endregion HEADER */
 
 
 /* #region  MAIN */
 main {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   /* height: calc(100vh - 80px);
   overflow: auto; */
 }
