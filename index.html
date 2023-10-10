@@ -22,9 +22,9 @@
       <!-- BARRA DI NAVIGAZIONE -->
       <nav class="flex">
         <!-- PARTE SINISTRA NAV -->
-        <div class="nav-left flex">
+        <div class="nav-left">
           <ul class="flex">
-            <li><img src="img/logo-small.png" alt="logo Dropbox"></li>
+            <li class="flex"><a href="#"><img src="img/logo-small.png" alt="logo Dropbox"></a></li>
             <li><a href="#">Perchè Dropbox</a></li>
             <li><a href="#">Funzioni</a></li>
             <li><a href="#">Piani e Prezzi</a></li>
@@ -32,7 +32,7 @@
         </div>
         <!-- PARTE SINISTRA NAV -->
         <!-- PARTE DESTRA NAV -->
-        <div class="nav-right flex">
+        <div class="nav-right">
           <ul class="flex">
             <li><a href="#">Supporto</a></li>
             <li><a href="#">Contatta l'ufficio vendite</a></li>
@@ -43,36 +43,37 @@
         <!-- PARTE DESTRA NAV -->
       </nav>
       <!-- BARRA DI NAVIGAZIONE -->
-      <!-- HEADER BOTTOM -->
-      <div class="container big">
-        <!-- TITOLO DELLA PAGINA -->
-        <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-        <!-- TITOLO DELLA PAGINA -->
-        <!-- CONTENUTORE HEADER BOTTOM -->
-        <div class="flex">
-          <div class="header-bottom-left">
-            <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-            <button class="btn">Inizia la tua prova gratuita</button>
-            <div>Annulla in qualsiasi momento</div>
-            <i class="fa-solid fa-arrow-down"></i>
-          </div>
-          <div class="header-bottom-right"><img src="img/jumbo.png" alt="immagine-jumbo"></div>
-        </div>
-        <!-- CONTENUTORE HEADER BOTTOM -->
-      </div>
-      <!-- HEADER BOTTOM -->
     </header>
     <!-- HEADER -->
     <!-- MAIN -->
     <main>
+      <!-- JUMBOTRON -->
+      <div class="jumbotron">
+        <div class="container big">
+          <!-- TITOLO DELLA PAGINA -->
+          <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+          <!-- TITOLO DELLA PAGINA -->
+          <!-- CONTENUTORE JUMBOTRON -->
+          <div class="flex">
+            <div class="jumbo-left">
+              <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+              <button class="btn">Inizia la tua prova gratuita</button>
+              <div>Annulla in qualsiasi momento</div>
+              <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <div class="jumbo-right"><img src="img/jumbo.png" alt="immagine-jumbo"></div>
+          </div>
+          <!-- CONTENUTORE JUMBOTRON -->
+        </div>
+      </div>
+      <!-- JUMBOTRON -->
+      <!-- CONTAINER SEZIONI -->
       <div class="container small">
         <!-- PRIMA SEZIONE -->
         <section>
-          <!-- TITOLO SEZIONE E RADIO BUTTONS -->
           <h2>Trova il piano business che fa per te</h2>
           <div class="button-radio"><input type="radio" name="fatturazione"> Fatturazione mensile</div>
           <div class="button-radio"><input type="radio" name="fatturazione"> Fatturazione annuale</div>
-          <!-- TITOLO SEZIONE E RADIO BUTTONS -->
           <div class="flex plans">
             <div class="flex plan">
               <div class="plan-category"><i class="fa-solid fa-user"></i> Singolo</div>
@@ -157,10 +158,10 @@
               </div>
             </div>
             <div class="flex plan">
-              <div class="plan-category"><i class="fa-solid fa-building"></i> Singolo</div>
+              <div class="plan-category"><i class="fa-solid fa-building"></i> Team</div>
               <div class="plan-description">
                 <div>
-                  <h3>Professional</h3>
+                  <h3>Enterprise</h3>
                   <div>Contatta l'ufficio vendita per i prezzi</div>
                 </div>
                 <button class="btn">Prova gratis per 30 giorni
@@ -239,6 +240,7 @@
         </section>
         <!-- QUARTA SEZIONE -->
       </div>
+      <!-- CONTAINER SEZIONI -->
     </main>
     <!-- MAIN -->
     <!-- FOOTER -->

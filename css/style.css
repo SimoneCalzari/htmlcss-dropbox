@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
   color: black;
+  display: block;
 }
 
 ul {
@@ -26,6 +27,12 @@ button {
 /* #region  GENERAL */
 body {
   font-family: 'Open Sans', sans-serif;
+  margin-top: 80px;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 /* #endregion GENERAL */
 
@@ -40,11 +47,11 @@ body {
 }
 
 .big {
-  width: 70%;
+  max-width: 70%;
 }
 
 .small {
-  width: 60%;
+  max-width: 60%;
 }
 
 .btn {
@@ -58,13 +65,6 @@ body {
 
 /* #region  HEADER */
 header {
-  background-color: #b4d0e7;
-  padding-top: 80px;
-}
-
-nav {
-  background-color: white;
-  justify-content: space-between;
   height: 80px;
   position: fixed;
   top: 0;
@@ -73,71 +73,79 @@ nav {
   z-index: 100;
 }
 
-nav .nav-left ul li img {
-  padding: 27px 15px;
+nav {
+  background-color: white;
+  justify-content: space-between;
+  line-height: 80px;
 }
 
-nav ul li a {
-  line-height: 80px;
-  display: inline-block;
-  padding: 0 15px;
+nav ul li a{
+  padding: 0 10px;
 }
 
 nav .nav-right ul li button {
-  margin: 22px 10px;
+  margin: 0 10px;
 }
 
-header .container.big {
-  padding-top: 50px;
+nav .nav-left ul li:first-child{
+  align-items: center;
 }
 
-header .container.big h1 {
+/* #endregion HEADER */
+
+/* #region  MAIN */
+
+/* #region JUMBOTRON */
+
+main .jumbotron {
+  background-color: #b4d0e7;
+}
+
+main .jumbotron .container.big {
+  padding-top: 90px;
+}
+
+main .jumbotron .container.big h1 {
   font-size: 60px;
   line-height: 80px;
   font-weight: bolder;
   margin-bottom: 50px;
 }
 
-header .container.big .flex .header-bottom-left {
+main .jumbotron .container.big .flex .jumbo-left {
   width: 30%;
 }
 
-header .container.big .flex .header-bottom-left p {
+main .jumbotron .container.big .flex .jumbo-left p {
   font-size: 14px;
   line-height: 20px;
 }
 
-header .container.big .flex .header-bottom-left button {
+main .jumbotron .container.big .flex .jumbo-left *:nth-child(3) {
+  font-size: 14px;
+}
+
+main .jumbotron .container.big .flex .jumbo-left button {
+  font-size: 14px;
   margin: 25px 0;
 }
 
-header .container.big .flex .header-bottom-left i {
+main .jumbotron .container.big .flex .jumbo-left a i {
   font-size: 35px;
   font-weight: bolder;
-  margin: 50px 0 10px;
+  margin: 40px 0 10px;
 }
 
-header .container.big .flex .header-bottom-right {
+main .jumbotron .container.big .flex .jumbo-right {
   width: 70%;
   position: relative;
 }
 
-header .container.big .flex .header-bottom-right img {
-  width: 100%;
+main .jumbotron .container.big .flex .jumbo-right img {
   position: absolute;
 }
 
-
-
-/* #endregion HEADER */
-
-
-/* #region  MAIN */
-main {
-  /* margin-top: 80px; */
-  /* height: calc(100vh - 80px);
-  overflow: auto; */
-}
+/* #endregion JUMBOTRON */
 
 main div.container.small {
   padding-top: 140px;
@@ -146,7 +154,7 @@ main div.container.small {
 /* #region SECTION 1 */
 
 main div.container.small section h2 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 main div.container.small section .button-radio {
@@ -160,11 +168,11 @@ main div.container.small section .button-radio input {
 
 main section .plans {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 main section .plans .plan {
-  width: calc((100% - 40px) / 3);
+  width: calc((100% - 60px) / 3);
   flex-grow: 1;
   flex-direction: column;
 }
@@ -183,13 +191,17 @@ main section .plans .plan .plan-description {
   padding: 20px;
 }
 
-main section .plans .plan:last-child .plan-description {
+main section .plans .plan:last-child .plan-description  {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+main section .plans .plan:last-child .plan-description > :last-child {
+  margin-top: 30px;
+  font-size: 13px;
+  width: 75%;
+}
 
 main section .plans .plan:not(:last-child) .plan-description > * {
   margin-bottom: 50px;
@@ -219,7 +231,9 @@ main section .plans .plan:last-child button {
 main section .plans .plan .plan-description a {
   color: blue;
   text-decoration: underline;
+  display: inline-block;
 }
+
 main section .plans .plan .plan-description div:first-child > * {
   margin-bottom: 10px;
 }
@@ -231,6 +245,25 @@ main section .plans .plan:not(:last-child) .plan-description > div:nth-of-type(2
   width: 15%;
   margin-top: 40px;
 }
+
+main section .plans .plan:not(:last-child) .plan-description h4 {
+  margin-bottom: 30px;
+}
+
+.fa-solid.fa-check {
+  color: #0061ff;
+}
+
+main section .plans .plan-description div:first-child *:nth-child(2) {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+main section .plans .plan-description div:first-child *:nth-child(3) {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
 
 /* #endregion SECTION 1 */
 
@@ -244,9 +277,6 @@ main .container.small section:nth-child(2) div:first-child {
   width: 55%;
 }
 
-main .container.small section:nth-child(2) div:first-child img {
-  width: 100%;
-}
 
 main .container.small section:nth-child(2) div:last-child {
   width: 45%;
@@ -284,19 +314,15 @@ main div.container.small section:nth-child(3) h2 {
 
 main div.container.small section:nth-child(3) .operations {
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
 }
 
 main div.container.small section:nth-child(3) .operations .operation {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 80px) / 3);
 }
 
 main div.container.small section:nth-child(3) .operations .operation .operation-img  {
   margin-bottom: 20px;
-}
-
-main div.container.small section:nth-child(3) .operations .operation .operation-img img {
-  width: 100%;
 }
 
 main div.container.small section:nth-child(3) .operations .operation .operation-descriptio h3 {
@@ -314,9 +340,9 @@ main div.container.small section:nth-child(3) .operations .operation .operation-
 
 /* #region SECTION 4 */
 main .container.small section:nth-child(4) h2{
-  font-size: 30px;
+  font-size: 38px;
   margin-bottom: 70px;
-  width: 70%;
+  width: 80%;
 }
 
 main .container.small section:nth-child(4) div a{
