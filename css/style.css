@@ -87,7 +87,8 @@ nav .nav-right ul li button {
   margin: 0 10px;
 }
 
-nav .nav-left ul li:first-child{
+nav .nav-left ul li:first-child a{
+  height: 100%;
   align-items: center;
 }
 
@@ -147,7 +148,7 @@ main .jumbotron .container.big .flex .jumbo-right img {
 
 /* #endregion JUMBOTRON */
 
-main div.container.small {
+main > :nth-child(2) {
   padding-top: 140px;
 }
 
@@ -356,6 +357,115 @@ main .container.small section:nth-child(4) div {
 
 /* #endregion SECTION 4 */
 
+/* #region PARTNERSHIP */
+.partnerships > div {
+  width: calc(100% / 3);
+  flex-wrap: wrap;
+}
+
+/* .partnerships {
+  justify-content: space-between;
+}
+
+.partnerships > div:not(.partnerships-center) {
+  width: 350px;
+  flex-shrink: 0;
+} */
+
+.partnership > div {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnership img {
+  width: 50%;
+  filter: invert(100%);
+}
+
+.partnership:first-child div:nth-child(1) {
+  background-color: #a2d39b;
+  border: 10px solid #d1e9cd;
+}
+.partnership:first-child div:nth-child(2) {
+  background-color: #61082b;
+}
+.partnership:first-child div:nth-child(3) {
+  background-color: #0093ce;
+}
+.partnership:first-child div:nth-child(4) {
+  background-color: #ff1c1c;
+}
+.partnership:last-child div:nth-child(1) {
+  background-color: #d5001f;
+}
+.partnership:last-child div:nth-child(2) {
+  background-color: #b4d0e7;
+}
+.partnership:last-child div:nth-child(3) {
+  background-color: #0d2481;
+}
+.partnership:last-child div:nth-child(4) {
+  background-color: #ffd830;
+}
+
+.partnerships-center {
+  background-color: #f5f5f5;
+  padding: 30px;
+  /* overflow: auto; */
+}
+
+.partnerships-center img {
+  width: 50%;
+}
+
+.partnerships-center div:first-child img {
+  width: 50%;
+}
+
+.partnerships-center div:first-child::after {
+  content: '';
+  display: block;
+  border: 1px solid #d0d0d3;
+  width: 20%;
+  margin-top: 40px;
+}
+
+.partnerships-center p {
+  font-size: 14px;
+}
+
+/* #endregion PARTNERSHIP */
+
+/* #region PROVA */
+.prova {
+  background-color: #b4d0e7;
+  height: 300px;
+}
+
+.prova .container.small.flex {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.prova .container.small.flex :first-child {
+  color: #61082b;
+  font-size: 34px;
+  width: 60%;
+  font-weight: bold;
+}
+
+.prova .container.small.flex :last-child {
+  padding: 15px 40px;
+}
+/* #endregion PROVA */
+
+/* #region FAQ */
+
+/* #endregion FAQ */
 
 /* #endregion MAIN */
 
