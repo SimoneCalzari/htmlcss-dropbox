@@ -416,6 +416,9 @@ main .container.small section:nth-child(4) div {
 
 .partnership:first-child div:nth-child(1) {
   background-color: #a2d39b;
+}
+
+.partnership:first-child div:nth-child(1):hover {
   border: 10px solid #d1e9cd;
 }
 .partnership:first-child div:nth-child(2) {
@@ -556,4 +559,58 @@ main .container.small section:nth-child(4) div {
 
 
 /* #region  FOOTER */
+footer {
+  background-color: black;
+}
+
+footer * {
+  color: white
+}
+
+footer .footer-menus {
+  padding: 80px 0;
+  /* width: 100%; */
+}
+
+footer .footer-menus .footer-menu {
+  width: 20%;
+}
+
+footer .footer-menus .footer-menu h4 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+footer .footer-menus .footer-menu ul li {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+footer .container.big > div:last-child {
+  padding: 35px 0 35px;
+  font-size: 14px;
+}
+
+footer .container.big > div:last-child * {
+  vertical-align: middle;
+}
+
+footer .container.big > div:last-child i:first-of-type {
+  padding-right: 5px;
+}
+
+footer .container.big > div:last-child i:last-of-type {
+  padding-left: 5px;
+}
+
+footer .container.big > div:last-child:before {
+  content: '';
+  border-top: 1px solid white;
+  display: block;
+  width: 12%;
+  position: relative;
+  top: -35px;
+}
+
+
 /* #endregion FOOTER */
