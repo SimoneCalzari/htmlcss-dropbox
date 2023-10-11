@@ -122,7 +122,6 @@ main .jumbotron .container.big h1 {
   font-size: 60px;
   line-height: 80px;
   font-weight: bolder;
-  margin-bottom: 50px;
 }
 
 main .jumbotron .container.big .flex .jumbo-left {
@@ -146,16 +145,24 @@ main .jumbotron .container.big .flex .jumbo-left button {
 main .jumbotron .container.big .flex .jumbo-left a i {
   font-size: 35px;
   font-weight: bolder;
-  margin: 40px 0 10px;
+}
+
+main .jumbotron .container.big .flex .jumbo-left a  {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+main .jumbotron .container.big .flex {
+  position: relative;
+  top: 40px;
 }
 
 main .jumbotron .container.big .flex .jumbo-right {
   width: 70%;
-  position: relative;
 }
 
 main .jumbotron .container.big .flex .jumbo-right img {
-  position: absolute;
+  /* position: absolute; */
 }
 
 /* #endregion JUMBOTRON */
