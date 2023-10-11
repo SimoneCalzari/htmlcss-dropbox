@@ -23,7 +23,6 @@ button {
 }
 /* #endregion RESET */
 
-
 /* #region  GENERAL */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -46,7 +45,6 @@ button:hover {
   filter: brightness(1.4);
 }
 /* #endregion GENERAL */
-
 
 /* #region  COMMONS */
 .flex {
@@ -72,7 +70,6 @@ button:hover {
   text-align: center;
 }
 /* #endregion COMMONS */
-
 
 /* #region  HEADER */
 header {
@@ -177,11 +174,14 @@ main .jumbotron .container.big .flex .jumbo-right img {
 
 /* #endregion JUMBOTRON */
 
+/* #region SECTIONS */
 main > :nth-child(2) {
   padding-top: 130px;
 }
 
 /* #region SECTION 1 */
+
+/* #region LAYOUT SECTION 1 */
 main section .plans {
   flex-wrap: wrap;
   gap: 30px;
@@ -210,6 +210,8 @@ main section .plans .plan .plan-description {
 main section .plans .plan:not(:last-child) .plan-description > * {
   margin-bottom: 50px;
 }
+
+/* #endregion LAYOUT SECTION 1 */
 
 /* #region HEADINGS AND RADIO */
 main div.container.small section h2 {
@@ -242,6 +244,15 @@ main section .plans .plan .plan-description h4 {
 main section .plans .plan .plan-description .fa-solid.fa-check {
   color: #0061ff;
 }
+
+.plans .plan .plan-description ul li {
+  display: flex;
+}
+
+.plans .plan .plan-description ul li div:nth-of-type(2) {
+  padding-left: 3px;
+} 
+
 
 /* #endregion LISTE */
 
@@ -416,6 +427,8 @@ main .container.small section:nth-child(4) div {
 
 /* #endregion SECTION 4 */
 
+/* #endregion SECTIONS */
+
 /* #region PARTNERSHIP */
 .partnerships > div {
   width: calc(100% / 3);
@@ -581,7 +594,6 @@ main .container.small section:nth-child(4) div {
 /* #endregion FAQ */
 
 /* #endregion MAIN */
-
 
 /* #region  FOOTER */
 footer {
