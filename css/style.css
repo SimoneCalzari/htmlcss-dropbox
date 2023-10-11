@@ -499,16 +499,38 @@ main .container.small section:nth-child(4) div {
   padding: 100px 0;
 }
 .faq .container.small h2 {
-  /* margin-top: 100px; */
   font-size: 34px;
   margin-bottom: 30px;
 }
 
 .faq .container.small .flex {
-  justify-content: space-between;
   padding: 30px 0;
   font-weight: bold;
   font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.faq .container.small .flex div:first-child {
+  width: 80%;
+}
+.faq .container.small .flex div:nth-child(2) {
+  width: 20%;
+  text-align: right;
+}
+
+.faq .container.small .flex div:nth-child(3) {
+  width: 100%;
+  margin-top: 20px;
+  font-weight: normal;
+  display: none;
+}
+
+.faq .container.small .flex:hover div:nth-child(3) {
+  display: block;
+}
+
+.faq .container.small .flex:hover i {
+  transform: rotate(180deg);
 }
 
 .faq .container.small .flex div i {
