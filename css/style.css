@@ -182,20 +182,6 @@ main > :nth-child(2) {
 }
 
 /* #region SECTION 1 */
-
-main div.container.small section h2 {
-  font-size: 35px;
-}
-
-main div.container.small section .button-radio {
-  display: inline-block;
-  margin: 50px 40px 50px 0;
-}
-
-main div.container.small section .button-radio input {
-  padding-left: 20px;
-}
-
 main section .plans {
   flex-wrap: wrap;
   gap: 30px;
@@ -221,51 +207,55 @@ main section .plans .plan .plan-description {
   padding: 20px;
 }
 
-main section .plans .plan:last-child .plan-description  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-main section .plans .plan:last-child .plan-description > :last-child {
-  margin-top: 30px;
-  font-size: 13px;
-  width: 75%;
-}
-
 main section .plans .plan:not(:last-child) .plan-description > * {
   margin-bottom: 50px;
 }
 
+/* #region HEADINGS AND RADIO */
+main div.container.small section h2 {
+  font-size: 35px;
+}
+
+main div.container.small section .button-radio {
+  display: inline-block;
+  margin: 50px 40px 50px 0;
+}
+
+main div.container.small section .button-radio input {
+  padding-left: 20px;
+}
+/* #endregion HEADINGS AND RADIO */
+
+/* #region LISTE */
 main section .plans .plan .plan-description ul {
   font-size: 14px;
 }
 
 main section .plans .plan .plan-description ul li {
-  line-height: 30px;
+  margin-bottom: 25px;
 }
 
-main section .plans .plan .plan-description div button:first-child {
-  display: inline-block;
+main section .plans .plan .plan-description h4 {
+  margin-bottom: 30px;
+}
+
+main section .plans .plan .plan-description .fa-solid.fa-check {
+  color: #0061ff;
+}
+
+/* #endregion LISTE */
+
+/* #region BOTTONE, LINK E SEPARATORE */
+main section .plans .plan .plan-description > div button {
   width: 100%;
   margin-bottom: 40px;
   font-size: 14px;
-}
-
-main section .plans .plan:last-child button {
-  font-size: 14px;
-  padding: 10px 15px;
-  align-self: flex-start;
 }
 
 main section .plans .plan .plan-description a {
   color: blue;
   text-decoration: underline;
   display: inline-block;
-}
-
-main section .plans .plan .plan-description div:first-child > * {
-  margin-bottom: 10px;
 }
 
 main section .plans .plan:not(:last-child) .plan-description > div:nth-of-type(2)::after {
@@ -275,25 +265,60 @@ main section .plans .plan:not(:last-child) .plan-description > div:nth-of-type(2
   width: 15%;
   margin-top: 40px;
 }
+/* #endregion BOTTONE, LINK E SEPARATORE */
 
-main section .plans .plan:not(:last-child) .plan-description h4 {
-  margin-bottom: 30px;
+/* #region NOME PIANO E PREZZO */
+main section .plans .plan:not(:last-child) .plan-description div:first-child > * {
+  margin-bottom: 10px;
 }
 
-.fa-solid.fa-check {
-  color: #0061ff;
-}
-
-main section .plans .plan-description div:first-child *:nth-child(2) {
+main section .plans .plan:not(:last-child) .plan-description div:first-child *:nth-child(2) {
   font-size: 13px;
   font-weight: bolder;
 }
 
-main section .plans .plan-description div:first-child *:nth-child(3) {
+main section .plans .plan:not(:last-child) .plan-description div:first-child *:nth-child(3) {
   font-size: 13px;
   font-weight: lighter;
 }
+/* #endregion NOME PIANO E PREZZO */
 
+/* #region LAST PLAN */
+
+
+main section .plans .plan:last-child .plan-description  {
+  flex-direction: row;
+}
+
+main section .plans .plan:last-child .plan-description > :first-child  {
+  width: 75%;
+}
+
+main section .plans .plan:last-child .plan-description > :last-child  {
+  width: 25%;
+}
+
+main section .plans .plan:last-child .plan-description h3  {
+  margin-bottom: 15px;
+}
+
+main section .plans .plan:last-child .plan-description > div div:first-of-type {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+main section .plans .plan:last-child .plan-description > div div:last-of-type {
+  font-size: 14px;
+}
+
+main section .plans .plan:last-child button {
+  font-size: 14px;
+  padding: 10px 15px;
+  align-self: flex-start;
+}
+
+/* #endregion LAST PLAN */
 
 /* #endregion SECTION 1 */
 
